@@ -1,0 +1,8 @@
+<div *ngIf="selectedMusic">
+  <h2>{{ selectedMusic.musicName }}</h2>
+  <ng-container *ngIf="selectedMusic.source">
+    <audio controls [src]="selectedMusic.source" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </ng-container>
+</div>
