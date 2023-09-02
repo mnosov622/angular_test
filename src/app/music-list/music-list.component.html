@@ -18,6 +18,7 @@
   <mat-row
     *matRowDef="let row; columns: displayedColumns"
     (click)="showMp3Player(row)"
+    class="table-row"
   ></mat-row>
 </mat-table>
 <app-mp3-player [selectedMusic]="selectedMusic"></app-mp3-player>
