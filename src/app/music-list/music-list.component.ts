@@ -1,11 +1,5 @@
 import { Component } from '@angular/core';
-
-interface Music {
-  id: number;
-  musicName: string;
-  fileName: string;
-  source: string;
-}
+import { Music } from '../interfaces/music.interface';
 
 @Component({
   selector: 'app-music-list',

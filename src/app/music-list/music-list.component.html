@@ -1,25 +1,19 @@
-<!-- music-list.component.html -->
-
 <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-  <!-- ID Column -->
   <ng-container matColumnDef="id">
     <mat-header-cell *matHeaderCellDef>ID</mat-header-cell>
     <mat-cell *matCellDef="let music">{{ music.id }}</mat-cell>
   </ng-container>
 
-  <!-- Music Name Column -->
   <ng-container matColumnDef="musicName">
     <mat-header-cell *matHeaderCellDef>Music Name</mat-header-cell>
     <mat-cell *matCellDef="let music">{{ music.musicName }}</mat-cell>
   </ng-container>
 
-  <!-- File Name Column -->
   <ng-container matColumnDef="fileName">
     <mat-header-cell *matHeaderCellDef>File Name</mat-header-cell>
     <mat-cell *matCellDef="let music">{{ music.fileName }}</mat-cell>
   </ng-container>
 
-  <!-- Define the columns in the table -->
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
   <mat-row
     *matRowDef="let row; columns: displayedColumns"
