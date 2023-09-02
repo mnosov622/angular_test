@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Music } from '../interfaces/music.interface';
+import { Music } from 'src/app/interfaces/music.interface';
 
 @Component({
   selector: 'app-music-list',

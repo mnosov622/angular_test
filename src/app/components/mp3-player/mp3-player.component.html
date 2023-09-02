@@ -1,4 +1,4 @@
-<div *ngIf="selectedMusic">
+<div *ngIf="selectedMusic" class="music-player">
   <h2>{{ selectedMusic.musicName }}</h2>
   <ng-container *ngIf="selectedMusic.source">
     <audio controls [src]="selectedMusic.source" type="audio/mpeg">
